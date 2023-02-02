@@ -27,5 +27,5 @@ the token on the client side works as expected. You can navigate between these t
 Also, you can refresh page and while there is no refresh token on the server side everything works wine
 4. Wait a minute without any action
 5. Refresh page
-6. Now you see that we can not fetch entities anymore because on the client side there is an old token but we already
+6. Now you see that we can not fetch entities anymore because the client side has an old token, but we already
 refreshed it on the server side.
