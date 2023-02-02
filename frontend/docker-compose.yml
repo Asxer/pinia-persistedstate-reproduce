@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  frontend:
+    image: node:18
+    build: .
+    container_name: pinia-plugin-persistedstate-reproduce-frontend
+    command: bash -c 'npm i --legacy-peer-deps && /etc/init.d/nginx start && npm run dev -- --port 3000'
+    volumes:
+      - ./:/app/
+      - ./docker/local/nginx:/etc/nginx/sites-available
+    ports:
+      - 3000:3000
+      - 24600:24600
+    networks:
+      - pinia-plugin-persistedstate-reproduce
+
+networks:
+  pinia-plugin-persistedstate-reproduce:
+    external: true

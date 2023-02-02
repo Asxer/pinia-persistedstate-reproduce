@@ -1,0 +1,46 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "cypress:open": "cypress open",
+    "start": "nuxt start"
+  },
+  "devDependencies": {
+    "@nuxt/test-utils-edge": "^3.0.0-rc.13-27772354.a0a59e2",
+    "@types/mocha": "^10.0.0",
+    "@types/qs": "^6.9.7",
+    "node-sass": "^7.0.3",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "typescript": "^4.8.4",
+    "vite-svg-loader": "^3.6.0",
+    "vitest": "^0.24.3"
+  },
+  "dependencies": {
+    "@nuxtjs/pwa": "^3.3.5",
+    "@pinia/nuxt": "^0.4.3",
+    "@types/vuelidate": "^0.7.15",
+    "@vuelidate/core": "^2.0.0",
+    "@vuelidate/validators": "^2.0.0",
+    "@vuepic/vue-datepicker": "^3.6.5",
+    "axios": "^1.1.3",
+    "jwt-check-expiration": "^1.0.5",
+    "jwt-decode": "^3.1.2",
+    "laravel-vue-pagination": "^3.0.0",
+    "moment": "^2.29.4",
+    "nuxt": "3.0.0-rc.14",
+    "pinia-plugin-persistedstate": "^2.3.0",
+    "qs": "^6.11.0",
+    "usemodal-vue3": "^0.3.7",
+    "vue-advanced-cropper": "^2.8.6",
+    "vue-the-mask": "^0.11.1",
+    "vue3-editor": "^0.1.1",
+    "vue3-geolocation": "^1.0.0",
+    "vue3-photo-preview": "^0.2.6",
+    "vuejs3-google-maps": "^0.2.3"
+  }
+}

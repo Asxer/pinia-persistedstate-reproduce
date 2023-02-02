@@ -1,0 +1,25 @@
+@import 'fonts';
+@import 'variables';
+@import 'layout';
+@import 'ui-kit/box';
+@import 'ui-kit/button';
+@import 'ui-kit/form';
+@import 'ui-kit/grid';
+@import 'ui-kit/pagination';
+@import 'ui-kit/sidebar';
+@import 'ui-kit/table';
+@import 'etc';
+@import 'pages/login';
+
+.search {
+  &-query { margin-bottom: 1rem; padding-bottom: 0; }
+
+  &-panel-item { padding: 1.5rem 0 0.5rem; }
+}
+
+.user {
+  &-image { display: block; margin: auto; height: 100%; width: auto;
+
+    &-container { height: $mock-container-height; }
+  }
+}
