@@ -33,7 +33,7 @@ return [
         */
         'description' => 'swagger-description',
         'version' => '0.0.0',
-        'title' => 'Top secret escort API',
+        'title' => 'Pinia presistedstate reproduct API',
         'termsOfService' => '',
         'contact' => [
             'email' => 'ozkedko@gmail.com'

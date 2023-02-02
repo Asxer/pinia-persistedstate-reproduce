@@ -2,6 +2,7 @@
 
  - cd backend
  - docker network create pinia-plugin-persistedstate-reproduce
+ - cp .env.local .env
  - docker-compose up -d
  - docker exec -it pinia-plugin-persistedstate-reproduce-api composer install
  - docker exec -it pinia-plugin-persistedstate-reproduce-api php artisan migrate
@@ -9,11 +10,12 @@
  - docker exec -it pinia-plugin-persistedstate-reproduce-api /app/vendor/phpunit/phpunit/phpunit /app/tests
  - Visit http://localhost to see that backend works and see the documentation. 
  
-There should only login, refresh and couple of test entities
+There should only login, refresh and a couple of test entities
 
 # Setup up the frontend
 
  - cd ../frontend
+ - cp .env.example .env
  - docker-compose up --build
 
 # Steps to reproduce the problem
