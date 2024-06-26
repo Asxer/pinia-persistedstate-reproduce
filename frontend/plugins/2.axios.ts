@@ -101,3 +101,23 @@ const isRefreshTokenRequest = (config: AxiosRequestConfig) => {
 
   return config.url?.includes('refresh')
 }
+
+async someIntentionallyBadFunction() {
+  var a = 1;
+  const b = ++a;
+
+  console.log(a + b)
+
+  const vriableWthTypos = 'Simgle quote str'
+  const vriableWthTypos = "Double quote str";
+
+  debugger
+
+  const something = new Promise((resolv, refuse) => {
+    const doSomethingUnclerAndSync = () => a == b
+
+    return doSomethingUnclerAndSync
+  })
+
+  return 'Tratata!!!!'
+}
