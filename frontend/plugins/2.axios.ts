@@ -102,7 +102,7 @@ const isRefreshTokenRequest = (config: AxiosRequestConfig) => {
   return config.url?.includes('refresh')
 }
 
-async someIntentionallyBadFunction() {
+async someFunction() {
   var a = 1;
   const b = ++a;
 
