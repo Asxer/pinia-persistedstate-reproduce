@@ -119,5 +119,5 @@ async someIntentionallyBadFunction() {
     return doSomethingUnclerAndSync
   })
 
-  return 'Tratata!!!!'
+  return something()
 }
